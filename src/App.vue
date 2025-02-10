@@ -425,7 +425,7 @@ export default {
   methods: {
 
     async loginWithGoogle() {
-      const clientId = "717012932157-lbil1b55932lttkrh1o86jdipccecrcr.apps.googleusercontent.com";
+      const clientId = "";
       const redirectUri = `${window.location.origin}/oauth2callback`; // Define a route in your app to handle OAuth callback
       const scope = "https://www.googleapis.com/auth/userinfo.email";
 
@@ -555,7 +555,7 @@ export default {
 
   try {
     const session = await createSession({
-      priceId: 'price_1QZv2pJqQ5pyGwZ75FhrlzLM',
+      priceId: '',
       userId: this.user.id, // Pass the user ID explicitly
     });
 
@@ -574,7 +574,7 @@ export default {
 
     redirectToStripePortal() {
       // Replace the URL below with your actual Stripe billing portal link
-      const stripeBillingPortalURL = 'https://billing.stripe.com/p/login/fZe7vAa16ej9cX65kk';
+      const stripeBillingPortalURL = '';
 
       // Redirect the user to the Stripe billing portal
       window.location.href = stripeBillingPortalURL;
@@ -660,9 +660,8 @@ export default {
     } else if (status === 'cancel') {
       this.handleCancel();
     }
-    this.stripe = await loadStripe('pk_live_51Q67WsJqQ5pyGwZ7xetglLSjv1lB4wj8qNl5LBGeNPCG8b9ODe9OtPRp6P3tzGnU3wch2HhuIGWItEZ2P4Zf2dBo00aUHKCQT9');
+    this.stripe = await loadStripe('pk_live');
     //test
-    //this.stripe = await loadStripe('pk_test_51Q67WsJqQ5pyGwZ7fP51Dsw7RypT3l2a5aeBQjcWC0gsjOTW0HpHRh8QrKCNn8wnH6C2x5cE2rQ4NYPcvtHLgbWZ00GBmMquUU')
     // Check authentication state on load
 
 
