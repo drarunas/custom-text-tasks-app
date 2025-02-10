@@ -168,7 +168,7 @@ exports.getSubscriptionStatus = functions.runWith({
 
 
 // Environment variable for your API key
-const API_KEY = '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';  // Replace with your actual API key
+const API_KEY = 'open ai api key';  // Replace with your actual API key
 
 exports.runOpenAITask = functions.https.onRequest(async (req, res) => {
 
