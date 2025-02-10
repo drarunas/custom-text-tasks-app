@@ -6,13 +6,13 @@ import { getFunctions} from 'firebase/functions';
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDPsPafTCku6AolHKJHofbURwvnBbwtAP0",
+    apiKey: "",
     authDomain: "custom-text-tasks.firebaseapp.com",
     projectId: "custom-text-tasks",
     storageBucket: "custom-text-tasks.firebasestorage.app",
-    messagingSenderId: "717012932157",
-    appId: "1:717012932157:web:b8acd0cb8e6ea1af327c54",
-    measurementId: "G-YEN308LW6S"
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
   };
 
 const app = initializeApp(firebaseConfig);
